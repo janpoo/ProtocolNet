@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <permissionInheritace inherit="true">
+  <permission userName="test" permissions="Read|Write ...">
+  <virtualFolder name="vFolder" path="d:\">
+</config>

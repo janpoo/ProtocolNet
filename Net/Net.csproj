@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AB36CCF-5FFD-4780-A54E-A102ECA028B5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>LumiSoft.Net</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LumiSoft.Net</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/LumiSoft.Net/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>LumiSoft.Net</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>LumiSoft.Net.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BufferedSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Answer_Classes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\Dns_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dns\_DnsCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Client\FTP_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\FileSysEntry_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\FTP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FTP\Server\FTP_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICMP\Icmp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Client\IMAP_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Client\IMAP_FetchItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\Folder_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Folder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Folders.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_MessageFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\IMAP_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\Message_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMAP\Server\_FetchHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\Attachment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\Attachments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\MimeConstructor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\Parser\eAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\Parser\MimeEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mime\Parser\MimeParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Net_Core.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Client\POP3_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Client\POP3_MessageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Client\POP3_MessagesInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\GetMessagesInfo_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_Message.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_Messages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_Message_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="POP3\Server\POP3_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReadException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\commonDelegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\Error_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\ISocketServerSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\Log_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\SocketServer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServersCore\ValidateIP_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\_FixedStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\_LogWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServersCore\_ParamParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\BodyType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Client\PartOfMessage_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Client\SendJob_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Client\SMTP_Client.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Client\SMTP_Error.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\AuthUser_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\SMTP_Server.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\SMTP_Session.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\StoreMessage_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\ValidateMailboxSize_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\ValidateRecipient_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\ValidateSender_EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SMTP\Server\_SMTP_Cmd_Validator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SocketHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StreamLineReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="FTP\Server\FTP_Server.resx">
+      <DependentUpon>FTP_Server.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMAP\Server\IMAP_Server.resx">
+      <DependentUpon>IMAP_Server.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServersCore\SocketServer.resx">
+      <DependentUpon>SocketServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="FTP\Server\readme.txt" />
+    <None Include="ServersCore\SocketServerSession.cs">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

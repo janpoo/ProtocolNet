@@ -1,0 +1,18 @@
+Contact:
+ ivar@lumisoft.ee
+ www.lumisoft.ee
+
+  
+*) Extend Buffered Socket. ??? Ideas are welcome
+        *) Add useful methods to socket (ReadLine,SendLine,BeginReadLine,BeginSendLine,ReadData(to some termiantor), ...)
+           (Currently they are in Net_Core.cs and SocketHelper.cs)
+        *) Move logging to Socket. Allow add user entires to socket (Socket.AddLogEntry(string text)). 
+                                                          
+      
+
+  
+
+
+
+
+
